@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:JavaScriptAndOC/JavaScriptAndOC.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:WebViewJavascriptBridgeExample/WebViewJavascriptBridgeExample.xcodeproj">
    </FileRef>
    <FileRef
