@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2903D8CF1EBAAB8A00A1F49E /* test1.html in Resources */ = {isa = PBXBuildFile; fileRef = 2903D8CE1EBAAB8A00A1F49E /* test1.html */; };
 		292724E91EB9B9B90045A6E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 292724E81EB9B9B90045A6E5 /* main.m */; };
 		292724EC1EB9B9B90045A6E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 292724EB1EB9B9B90045A6E5 /* AppDelegate.m */; };
 		292724EF1EB9B9B90045A6E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292724EE1EB9B9B90045A6E5 /* ViewController.m */; };
 		292724F21EB9B9B90045A6E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292724F01EB9B9B90045A6E5 /* Main.storyboard */; };
 		292724F41EB9B9B90045A6E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292724F31EB9B9B90045A6E5 /* Assets.xcassets */; };
 		292724F71EB9B9B90045A6E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292724F51EB9B9B90045A6E5 /* LaunchScreen.storyboard */; };
+		2927250D1EB9E02D0045A6E5 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 2927250C1EB9E02D0045A6E5 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2903D8CE1EBAAB8A00A1F49E /* test1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test1.html; sourceTree = "<group>"; };
 		292724E41EB9B9B90045A6E5 /* JavaScriptAndOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JavaScriptAndOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		292724E81EB9B9B90045A6E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		292724EA1EB9B9B90045A6E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		292724F31EB9B9B90045A6E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292724F61EB9B9B90045A6E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		292724F81EB9B9B90045A6E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2927250C1EB9E02D0045A6E5 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				292724F51EB9B9B90045A6E5 /* LaunchScreen.storyboard */,
 				292724F81EB9B9B90045A6E5 /* Info.plist */,
 				292724E71EB9B9B90045A6E5 /* Supporting Files */,
+				2927250C1EB9E02D0045A6E5 /* test.html */,
+				2903D8CE1EBAAB8A00A1F49E /* test1.html */,
 			);
 			path = JavaScriptAndOC;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2927250D1EB9E02D0045A6E5 /* test.html in Resources */,
 				292724F71EB9B9B90045A6E5 /* LaunchScreen.storyboard in Resources */,
 				292724F41EB9B9B90045A6E5 /* Assets.xcassets in Resources */,
+				2903D8CF1EBAAB8A00A1F49E /* test1.html in Resources */,
 				292724F21EB9B9B90045A6E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8MT65P2FF;
 				INFOPLIST_FILE = JavaScriptAndOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xtc.JavaScriptAndOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8MT65P2FF;
 				INFOPLIST_FILE = JavaScriptAndOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xtc.JavaScriptAndOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +322,7 @@
 				292724FD1EB9B9B90045A6E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
