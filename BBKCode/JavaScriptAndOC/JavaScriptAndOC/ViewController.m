@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <objc/runtime.h>
 
 
 /**
@@ -49,6 +50,7 @@
     */
     
     [self.view addSubview:self.webView];
+    //class_addProtocol([UIWebView class],@protocol(JavaScriptObjctiveCDelegate));
 }
 
 
