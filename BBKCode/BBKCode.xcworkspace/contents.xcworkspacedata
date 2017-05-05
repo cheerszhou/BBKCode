@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SpotJavaScriptContext/SpotJavaScriptContext.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:JavaScriptAndOC/JavaScriptAndOC.xcodeproj">
    </FileRef>
    <FileRef
