@@ -72,10 +72,10 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
     //文件缓存—Etag—NSURLConnection
     switch (self.userCachePolicyType) {
         case ZXUserCachePolicyTypeEtagConnection:
-            [self sendRequestUseURLConnection:request completion:completion];
+            [self sendRequestByURLConnection:request completion:completion];
             break;
         case ZXUserCachePolicyTypeEtagSession:
-            
+            [self sendRequestByURLSessoin:request completion:completion];
             break;
         case ZXUserCachePolicyTypeLastModifiedConnection:
             
@@ -90,7 +90,7 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
     
 }
 
-- (void)sendRequestUseURLConnection:(NSURLRequest*)request completion:(GetDataCompletion)completion{
+- (void)sendRequestByURLConnection:(NSURLRequest*)request completion:(GetDataCompletion)completion{
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
         //类型转换（如果将分类设置给子类，需要强制转换）
         NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
@@ -110,6 +110,29 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
         completion? completion(data) :nil;
     }];
 
+}
+
+- (void)sendRequestByURLSessoin:(NSURLRequest*)request completion:(GetDataCompletion)completion {
+    NSURLSessionDataTask * dataTask = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        //类型转换（如果将分类设置给子类，需要强制转换）
+        NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
+        NSLog(@"statusCode == %@",@(httpResponse.statusCode));
+        //判断响应的状态码是否是 304 Not Modified
+        if (httpResponse.statusCode == 304) {
+            NSLog(@"加载本地缓存图片");
+            //如果是，使用本地缓存，根据请求获得到‘被缓存的响应’
+            NSCachedURLResponse* cacheResponse = [[NSURLCache sharedURLCache] cachedResponseForRequest:request];
+            //拿到缓存数据
+            data = cacheResponse.data;
+        }
+        //获取并且记录etag、区分大小写
+        self.etag = httpResponse.allHeaderFields[@"Etag"];
+        
+        NSLog(@"etag值%@",self.etag);
+        completion? completion(data) :nil;
+    }];
+    
+    [dataTask resume];
 }
 
 
