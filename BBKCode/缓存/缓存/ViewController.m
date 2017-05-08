@@ -10,6 +10,12 @@
 
 typedef void (^GetDataCompletion)(NSData *data);
 
+typedef NS_ENUM(NSInteger,ZXUserCachePolicyType) {
+    ZXUserCachePolicyTypeEtagConnection,
+    ZXUserCachePolicyTypeEtagSession,
+    ZXUserCachePolicyTypeLastModifiedConnection,
+    ZXUserCachePolicyTypeLastModifiedSession,
+};
 static NSString *const kETagImageURL = @"http://files.vivo.com.cn/static/www/vivo/xplay6/picture/xplay6-index-s1-figure3-small.png";
 static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static/www/vivo/high/x9hll/vm-h-x9hll-figure2-small.png";
 
@@ -17,6 +23,7 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
 //响应的 etag
 @property (nonatomic, copy) NSString *etag;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
+@property (nonatomic, assign) ZXUserCachePolicyType userCachePolicyType;
 @end
 
 @implementation ViewController
@@ -24,6 +31,7 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.userCachePolicyType = ZXUserCachePolicyTypeEtagConnection;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -61,6 +69,28 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
         [request setValue:self.etag forHTTPHeaderField:@"If-None-Match"];
     }
     
+    //文件缓存—Etag—NSURLConnection
+    switch (self.userCachePolicyType) {
+        case ZXUserCachePolicyTypeEtagConnection:
+            [self sendRequestUseURLConnection:request completion:completion];
+            break;
+        case ZXUserCachePolicyTypeEtagSession:
+            
+            break;
+        case ZXUserCachePolicyTypeLastModifiedConnection:
+            
+            break;
+        case ZXUserCachePolicyTypeLastModifiedSession:
+            
+            break;
+            
+        default:
+            break;
+    }
+    
+}
+
+- (void)sendRequestUseURLConnection:(NSURLRequest*)request completion:(GetDataCompletion)completion{
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
         //类型转换（如果将分类设置给子类，需要强制转换）
         NSHTTPURLResponse* httpResponse = (NSHTTPURLResponse*)response;
@@ -79,6 +109,9 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
         NSLog(@"etag值%@",self.etag);
         completion? completion(data) :nil;
     }];
+
 }
+
+
 
 @end
