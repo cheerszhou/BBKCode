@@ -22,6 +22,8 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
 @interface ViewController ()
 //响应的 etag
 @property (nonatomic, copy) NSString *etag;
+//响应的 LastModified
+@property (nonatomic, copy) NSString *localLastModified;
 @property (weak, nonatomic) IBOutlet UIImageView *myImageView;
 @property (nonatomic, assign) ZXUserCachePolicyType userCachePolicyType;
 @end
@@ -31,19 +33,24 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.userCachePolicyType = ZXUserCachePolicyTypeEtagConnection;
+    self.userCachePolicyType = ZXUserCachePolicyTypeEtagSession;
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self getData:^(NSData *data) {
-        self.myImageView.image = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.myImageView.image = [UIImage imageWithData:data];
+        });
     }];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     [self getData:^(NSData *data) {
-        self.myImageView.image = [UIImage imageWithData:data];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.myImageView.image = [UIImage imageWithData:data];
+        });
+
     }];
 }
 
@@ -51,22 +58,25 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
 /**
  @brief 如果本地缓存资源为最新，则使用本地缓存，如果服务器已经更新或本地无缓存则从服务器请求资源
  
- @details
+ @detailst
  步骤：
  1.请求是可变的，缓存策略要每次都从服务器加载
- 2.每次得到响应后，需要记录住etag
- 3.下次发送请求的同时，将etag一起发送给服务器（由服务器比较内容是否发生变化）
+ 2.每次得到响应后，需要记录住etag/LastModified
+ 3.下次发送请求的同时，将etagetag/LastModified一起发送给服务器（由服务器比较内容是否发生变化）
  
 
  @param completion 返回图片资源
  */
 - (void)getData:(GetDataCompletion)completion {
-    NSURL* url = [NSURL URLWithString:kETagImageURL];
+    NSURL* url = (self.userCachePolicyType==ZXUserCachePolicyTypeEtagSession||self.userCachePolicyType==ZXUserCachePolicyTypeEtagConnection)?[NSURL URLWithString:kETagImageURL]:[NSURL URLWithString:kLastModifiedImageURL];
     NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringCacheData timeoutInterval:15.0f];
     
-    //发送etag
+    //发送etag/lastLocalModified
     if(self.etag.length>0){
         [request setValue:self.etag forHTTPHeaderField:@"If-None-Match"];
+    }
+    if (self.localLastModified.length>0) {
+        [request setValue:self.localLastModified forHTTPHeaderField:@"If-Modified-Since"];
     }
     
     //文件缓存—Etag—NSURLConnection
@@ -78,10 +88,10 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
             [self sendRequestByURLSessoin:request completion:completion];
             break;
         case ZXUserCachePolicyTypeLastModifiedConnection:
-            
+            [self sendRequestByURLConnection:request completion:completion];
             break;
         case ZXUserCachePolicyTypeLastModifiedSession:
-            
+            [self sendRequestByURLSessoin:request completion:completion];
             break;
             
         default:
@@ -103,10 +113,16 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
             //拿到缓存数据
             data = cacheResponse.data;
         }
-        //获取并且记录etag、区分大小写
-        self.etag = httpResponse.allHeaderFields[@"Etag"];
+        //获取并且记录etag/lastLocalModified、区分大小写
+        if (self.userCachePolicyType==ZXUserCachePolicyTypeEtagSession||self.userCachePolicyType==ZXUserCachePolicyTypeEtagConnection) {
+            
+            self.etag = httpResponse.allHeaderFields[@"Etag"];
+            NSLog(@"etag值%@",self.etag);
+        }else{
+            self.localLastModified = httpResponse.allHeaderFields[@"Last-Modified"];
+            NSLog(@"localLastModified值%@",self.localLastModified);
+        }
         
-        NSLog(@"etag值%@",self.etag);
         completion? completion(data) :nil;
     }];
 
@@ -125,10 +141,19 @@ static NSString *const kLastModifiedImageURL = @"http://files.vivo.com.cn/static
             //拿到缓存数据
             data = cacheResponse.data;
         }
-        //获取并且记录etag、区分大小写
-        self.etag = httpResponse.allHeaderFields[@"Etag"];
+        //获取并且记录etag/lastLocalModified、区分大小写
+        if (self.userCachePolicyType==ZXUserCachePolicyTypeEtagSession||self.userCachePolicyType==ZXUserCachePolicyTypeEtagConnection) {
+            
+            self.etag = httpResponse.allHeaderFields[@"Etag"];
+            NSLog(@"etag值%@",self.etag);
+
+        }else{
+            self.localLastModified = httpResponse.allHeaderFields[@"Last-Modified"];
+            NSLog(@"localLastModified值%@",self.localLastModified);
+
+        }
         
-        NSLog(@"etag值%@",self.etag);
+        
         completion? completion(data) :nil;
     }];
     
