@@ -1,0 +1,54 @@
+//
+//  ViewController.m
+//  动态改变app icon(三)
+//
+//  Created by zxx_mbp on 2017/5/12.
+//  Copyright © 2017年 zxx_mbp. All rights reserved.
+//
+
+#import "ViewController.h"
+
+
+@interface ViewController ()
+@property (nonatomic, copy) NSArray *weathers;
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    //[self.btn addTarget:self action:@selector(btnAction) forControlEvents:UIControlEventTouchUpInside];
+    self.weathers = @[@"晴",@"多云",@"小雨",@"大雨",@"雪",@""];
+}
+
+
+- (IBAction)btnAction {
+    NSString* weahter = self.weathers[arc4random() % self.weathers.count];
+    [self setAppIconWithName:weahter];
+    
+    //测试推送上是否使用了20尺寸的图片
+    UILocalNotification * noti = [[UILocalNotification alloc]init];
+    noti.fireDate = [NSDate dateWithTimeIntervalSinceNow:5];
+    noti.alertBody = @"我们看看推送上面的App图标";
+    [[UIApplication sharedApplication] scheduleLocalNotification:noti];
+}
+
+- (void)setAppIconWithName:(NSString*)iconName {
+    if (![[UIApplication sharedApplication] supportsAlternateIcons]) {
+        return;
+    }
+    
+    if ([iconName isEqualToString:@""]) {
+        iconName = nil;
+    }
+    
+    [[UIApplication sharedApplication] setAlternateIconName:iconName completionHandler:^(NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"更换app图标发生错误了：%@",error);
+        }
+    }];
+}
+
+
+@end
