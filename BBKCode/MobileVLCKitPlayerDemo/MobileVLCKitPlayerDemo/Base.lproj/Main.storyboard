@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZZF-wc-Jei">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remote View Controller-->
+        <scene sceneID="9JB-ih-rAB">
+            <objects>
+                <viewController id="aXw-CU-E3K" customClass="RemoteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vom-Z4-qTj"/>
+                        <viewControllerLayoutGuide type="bottom" id="83E-0M-eFk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I9z-7N-kIw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-9y-cIG">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <state key="normal" title="播放远程视频"/>
+                                <connections>
+                                    <action selector="playRemoteVideo:" destination="aXw-CU-E3K" eventType="touchUpInside" id="AS4-CV-Uwh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iw5-9y-cIG" firstAttribute="centerX" secondItem="I9z-7N-kIw" secondAttribute="centerX" id="Pxa-dN-raS"/>
+                            <constraint firstItem="Iw5-9y-cIG" firstAttribute="centerY" secondItem="I9z-7N-kIw" secondAttribute="centerY" id="TLe-a2-LFU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="XKb-H6-LC8"/>
+                    <connections>
+                        <outlet property="remotePlayerBtn" destination="Iw5-9y-cIG" id="jgs-Yc-gVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ihg-A8-KgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1090" y="438"/>
+        </scene>
+        <!--Local View Controller-->
+        <scene sceneID="cGd-Bk-B7V">
+            <objects>
+                <viewController id="T5U-CR-gD8" customClass="LocalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GF4-iW-JD7"/>
+                        <viewControllerLayoutGuide type="bottom" id="7nw-M5-4Yg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ft6-y1-iup">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RVS-Rr-Ucq">
+                                <rect key="frame" x="141" y="318" width="92" height="30"/>
+                                <state key="normal" title="播放本地视频"/>
+                                <connections>
+                                    <action selector="playLocalVideo:" destination="T5U-CR-gD8" eventType="touchUpInside" id="AZJ-YN-roR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RVS-Rr-Ucq" firstAttribute="centerX" secondItem="ft6-y1-iup" secondAttribute="centerX" id="84n-A3-4z4"/>
+                            <constraint firstItem="RVS-Rr-Ucq" firstAttribute="centerY" secondItem="ft6-y1-iup" secondAttribute="centerY" id="rwg-M5-0QM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="JLP-cq-gFy"/>
+                    <connections>
+                        <outlet property="localPlayerBtn" destination="RVS-Rr-Ucq" id="euJ-hl-wsP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4c-ek-aFX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1091" y="-216"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jR4-rR-Ccb">
+            <objects>
+                <tabBarController id="ZZF-wc-Jei" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="r32-c5-K5u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="T5U-CR-gD8" kind="relationship" relationship="viewControllers" id="6Fm-nx-fka"/>
+                        <segue destination="aXw-CU-E3K" kind="relationship" relationship="viewControllers" id="yzY-rT-tnh"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eke-xY-mnw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2044" y="111"/>
+        </scene>
+    </scenes>
+</document>
