@@ -14,6 +14,7 @@
 		297E4BEB1ED267F8001EF75A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297E4BE91ED267F8001EF75A /* Main.storyboard */; };
 		297E4BED1ED267F8001EF75A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 297E4BEC1ED267F8001EF75A /* Assets.xcassets */; };
 		297E4BF01ED267F8001EF75A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 297E4BEE1ED267F8001EF75A /* LaunchScreen.storyboard */; };
+		29BECE681ED456F700391629 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 29BECE671ED456F700391629 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		297E4BEC1ED267F8001EF75A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		297E4BEF1ED267F8001EF75A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		297E4BF11ED267F8001EF75A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29BECE671ED456F700391629 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		448D806EB4C362D35C8FE183 /* Pods-完美动画LottieDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-完美动画LottieDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-完美动画LottieDemo/Pods-完美动画LottieDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D63F0BCE0C9C00A1EAD343E7 /* Pods-完美动画LottieDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-完美动画LottieDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-完美动画LottieDemo/Pods-完美动画LottieDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +49,7 @@
 		297E4BD41ED267F8001EF75A = {
 			isa = PBXGroup;
 			children = (
+				29BECE671ED456F700391629 /* README */,
 				297E4BDF1ED267F8001EF75A /* 完美动画LottieDemo */,
 				297E4BDE1ED267F8001EF75A /* Products */,
 				72806790E216D4E2E772B311 /* Pods */,
@@ -165,6 +168,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BECE681ED456F700391629 /* README in Resources */,
 				297E4BF01ED267F8001EF75A /* LaunchScreen.storyboard in Resources */,
 				297E4BED1ED267F8001EF75A /* Assets.xcassets in Resources */,
 				297E4BEB1ED267F8001EF75A /* Main.storyboard in Resources */,
@@ -389,6 +393,7 @@
 				297E4BF61ED267F8001EF75A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

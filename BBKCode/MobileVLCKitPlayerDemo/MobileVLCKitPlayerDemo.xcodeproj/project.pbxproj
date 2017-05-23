@@ -25,6 +25,7 @@
 		29990DE51EC53DDD00BFA116 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29990DE41EC53DDD00BFA116 /* CoreMedia.framework */; };
 		29990DE71EC53DE700BFA116 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29990DE61EC53DE700BFA116 /* VideoToolbox.framework */; };
 		29990DE91EC53DF600BFA116 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29990DE81EC53DF600BFA116 /* AudioToolbox.framework */; };
+		29BECE701ED4580100391629 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 29BECE6F1ED4580100391629 /* README */; };
 		29C882A81EC1A19200A289EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C882A71EC1A19200A289EC /* main.m */; };
 		29C882AB1EC1A19200A289EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C882AA1EC1A19200A289EC /* AppDelegate.m */; };
 		29C882B11EC1A19200A289EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C882AF1EC1A19200A289EC /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		29990DE41EC53DDD00BFA116 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		29990DE61EC53DE700BFA116 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		29990DE81EC53DF600BFA116 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		29BECE6F1ED4580100391629 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		29C882A31EC1A19200A289EC /* MobileVLCKitPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileVLCKitPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29C882A71EC1A19200A289EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29C882A91EC1A19200A289EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		29C8829A1EC1A19100A289EC = {
 			isa = PBXGroup;
 			children = (
+				29BECE6F1ED4580100391629 /* README */,
 				29C882A51EC1A19200A289EC /* MobileVLCKitPlayerDemo */,
 				29C882A41EC1A19200A289EC /* Products */,
 				29990DD11EC53D0500BFA116 /* Frameworks */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BECE701ED4580100391629 /* README in Resources */,
 				29C882B61EC1A19200A289EC /* LaunchScreen.storyboard in Resources */,
 				29C882B31EC1A19200A289EC /* Assets.xcassets in Resources */,
 				29C882B11EC1A19200A289EC /* Main.storyboard in Resources */,

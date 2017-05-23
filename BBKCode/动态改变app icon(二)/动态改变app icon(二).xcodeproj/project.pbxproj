@@ -24,6 +24,7 @@
 		295DFB251EC56A2100DB99B9 /* 雪@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 295DFB1B1EC56A2100DB99B9 /* 雪@2x.png */; };
 		295DFB261EC56A2100DB99B9 /* 雪@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 295DFB1C1EC56A2100DB99B9 /* 雪@3x.png */; };
 		295DFB291EC56A7500DB99B9 /* UIViewController+Present.m in Sources */ = {isa = PBXBuildFile; fileRef = 295DFB281EC56A7500DB99B9 /* UIViewController+Present.m */; };
+		29BECE6C1ED4577E00391629 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 29BECE6B1ED4577E00391629 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		295DFB1C1EC56A2100DB99B9 /* 雪@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雪@3x.png"; sourceTree = "<group>"; };
 		295DFB271EC56A7500DB99B9 /* UIViewController+Present.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Present.h"; sourceTree = "<group>"; };
 		295DFB281EC56A7500DB99B9 /* UIViewController+Present.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Present.m"; sourceTree = "<group>"; };
+		29BECE6B1ED4577E00391629 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		295DFAEC1EC5672F00DB99B9 = {
 			isa = PBXGroup;
 			children = (
+				29BECE6B1ED4577E00391629 /* README */,
 				295DFAF71EC5672F00DB99B9 /* 动态改变app icon(二) */,
 				295DFAF61EC5672F00DB99B9 /* Products */,
 			);
@@ -187,6 +190,7 @@
 				295DFB201EC56A2100DB99B9 /* 大雨@3x.png in Resources */,
 				295DFB1F1EC56A2100DB99B9 /* 大雨@2x.png in Resources */,
 				295DFB231EC56A2100DB99B9 /* 晴@2x.png in Resources */,
+				29BECE6C1ED4577E00391629 /* README in Resources */,
 				295DFB211EC56A2100DB99B9 /* 小雨@2x.png in Resources */,
 				295DFB251EC56A2100DB99B9 /* 雪@2x.png in Resources */,
 				295DFB1E1EC56A2100DB99B9 /* 多云@3x.png in Resources */,
@@ -366,6 +370,7 @@
 				295DFB0E1EC5672F00DB99B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

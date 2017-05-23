@@ -18,6 +18,7 @@
 		29BECE5C1ED2ED2F00391629 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BECE5B1ED2ED2F00391629 /* CreateViewController.m */; };
 		29BECE5F1ED2ED5000391629 /* MaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BECE5E1ED2ED5000391629 /* MaskView.m */; };
 		29BECE621ED2ED7500391629 /* UIViewController+Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BECE611ED2ED7500391629 /* UIViewController+Message.m */; };
+		29BECE661ED4567D00391629 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 29BECE651ED4567D00391629 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		29BECE5E1ED2ED5000391629 /* MaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskView.m; sourceTree = "<group>"; };
 		29BECE601ED2ED7500391629 /* UIViewController+Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Message.h"; sourceTree = "<group>"; };
 		29BECE611ED2ED7500391629 /* UIViewController+Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Message.m"; sourceTree = "<group>"; };
+		29BECE651ED4567D00391629 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = QRDemo/README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		2975D3881ED2DA1C0088A9A3 = {
 			isa = PBXGroup;
 			children = (
+				29BECE651ED4567D00391629 /* README */,
 				2975D3931ED2DA1C0088A9A3 /* QRDemo */,
 				2975D3921ED2DA1C0088A9A3 /* Products */,
 			);
@@ -163,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29BECE661ED4567D00391629 /* README in Resources */,
 				2975D3A41ED2DA1C0088A9A3 /* LaunchScreen.storyboard in Resources */,
 				2975D3A11ED2DA1C0088A9A3 /* Assets.xcassets in Resources */,
 				2975D39F1ED2DA1C0088A9A3 /* Main.storyboard in Resources */,

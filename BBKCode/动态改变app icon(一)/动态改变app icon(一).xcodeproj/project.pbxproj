@@ -23,6 +23,7 @@
 		2914F3171EC5577E00093EE2 /* 晴@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2914F3061EC5577E00093EE2 /* 晴@3x.png */; };
 		2914F3181EC5577E00093EE2 /* 雪@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2914F3071EC5577E00093EE2 /* 雪@2x.png */; };
 		2914F3191EC5577E00093EE2 /* 雪@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2914F3081EC5577E00093EE2 /* 雪@3x.png */; };
+		29BECE6A1ED4572200391629 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 29BECE691ED4572200391629 /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		2914F3061EC5577E00093EE2 /* 晴@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "晴@3x.png"; sourceTree = "<group>"; };
 		2914F3071EC5577E00093EE2 /* 雪@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雪@2x.png"; sourceTree = "<group>"; };
 		2914F3081EC5577E00093EE2 /* 雪@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "雪@3x.png"; sourceTree = "<group>"; };
+		29BECE691ED4572200391629 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		2914F2D01EC5572D00093EE2 = {
 			isa = PBXGroup;
 			children = (
+				29BECE691ED4572200391629 /* README */,
 				2914F2DB1EC5572D00093EE2 /* 动态改变app icon(一) */,
 				2914F2DA1EC5572D00093EE2 /* Products */,
 			);
@@ -182,6 +185,7 @@
 				2914F3141EC5577E00093EE2 /* 小雨@2x.png in Resources */,
 				2914F3161EC5577E00093EE2 /* 晴@2x.png in Resources */,
 				2914F3121EC5577E00093EE2 /* 大雨@2x.png in Resources */,
+				29BECE6A1ED4572200391629 /* README in Resources */,
 				2914F3101EC5577E00093EE2 /* 多云@2x.png in Resources */,
 				2914F2E91EC5572D00093EE2 /* Assets.xcassets in Resources */,
 				2914F3111EC5577E00093EE2 /* 多云@3x.png in Resources */,

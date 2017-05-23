@@ -25,4 +25,25 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:QRDemo/QRDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:iOS&#x5c0f;&#x6280;&#x5de7;&#x603b;&#x7ed3;/iOS&#x5c0f;&#x6280;&#x5de7;&#x603b;&#x7ed3;.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x5b8c;&#x7f8e;&#x52a8;&#x753b;LottieDemo/&#x5b8c;&#x7f8e;&#x52a8;&#x753b;LottieDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MobileVLCKitPlayerDemo/MobileVLCKitPlayerDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x52a8;&#x6001;&#x6539;&#x53d8;app icon(&#x4e09;)/&#x52a8;&#x6001;&#x6539;&#x53d8;app icon(&#x4e09;).xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x52a8;&#x6001;&#x6539;&#x53d8;app icon(&#x4e8c;)/&#x52a8;&#x6001;&#x6539;&#x53d8;app icon(&#x4e8c;).xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x52a8;&#x6001;&#x6539;&#x53d8;app icon(&#x4e00;)/&#x52a8;&#x6001;&#x6539;&#x53d8;app icon(&#x4e00;).xcodeproj">
+   </FileRef>
 </Workspace>
