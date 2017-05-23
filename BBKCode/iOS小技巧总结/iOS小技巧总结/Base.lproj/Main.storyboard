@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--UITableView的Group样式下的空白处理-->
+        <scene sceneID="weA-ay-uyq">
+            <objects>
+                <tableViewController id="XHu-64-BNu" customClass="ZxTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="b8x-Rg-Bcy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VaW-t2-MSF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VaW-t2-MSF" id="Nj1-sI-r4u">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="0Nc-j7-NRH">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Nc-j7-NRH" id="NSq-V6-4nL">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="74y-d1-Xb9">
+                                <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="74y-d1-Xb9" id="1Ke-rF-V1y">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XHu-64-BNu" id="lb7-v8-k0k"/>
+                            <outlet property="delegate" destination="XHu-64-BNu" id="Iot-hu-fdI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="UITableView的Group样式下的空白处理" id="cGd-sc-o8w"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AGp-4j-Ryv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-910" y="270"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7Xc-YS-Z1u">
+            <objects>
+                <navigationController id="yXD-Km-gBi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mSA-lJ-CBy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XHu-64-BNu" kind="relationship" relationship="rootViewController" id="xdJ-0Q-cVb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tl9-m1-NsN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1861" y="270"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Light.png" translatesAutoresizingMaskIntoConstraints="NO" id="JQZ-oh-J6u">
+                                <rect key="frame" x="67" y="238" width="240" height="128"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQX-AN-I69">
+                                <rect key="frame" x="67" y="390" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JQZ-oh-J6u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-31.5" id="2x0-kx-9Pr"/>
+                            <constraint firstItem="hQX-AN-I69" firstAttribute="top" secondItem="JQZ-oh-J6u" secondAttribute="bottom" constant="24" id="SGX-C6-0bJ"/>
+                            <constraint firstItem="JQZ-oh-J6u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Suc-zz-BQP"/>
+                            <constraint firstItem="JQZ-oh-J6u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="218" id="WIY-LM-OQ6"/>
+                            <constraint firstItem="JQZ-oh-J6u" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="XMR-yg-fBb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hQX-AN-I69" secondAttribute="bottom" constant="149" id="a6Y-TJ-Ce6"/>
+                            <constraint firstItem="hQX-AN-I69" firstAttribute="trailing" secondItem="JQZ-oh-J6u" secondAttribute="trailing" id="m2g-Su-2Qa"/>
+                            <constraint firstItem="hQX-AN-I69" firstAttribute="leading" secondItem="JQZ-oh-J6u" secondAttribute="leading" id="ptG-qN-7zJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="hQX-AN-I69" id="T8T-0h-VdD"/>
+                        <outlet property="image" destination="JQZ-oh-J6u" id="tM4-NT-vW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Light.png" width="354" height="232"/>
+    </resources>
+</document>
