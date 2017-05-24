@@ -1,14 +1,16 @@
 //
 //  EmitterLayerTestVC.m
-//  核心动画CoreAnimation之CALayer
+//  AnimationTest
 //
-//  Created by zxx_mbp on 2017/5/24.
-//  Copyright © 2017年 zxx_mbp. All rights reserved.
+//  Created by zhengqian.shi on 17/2/14.
+//  Copyright © 2017年 QITMAC000263. All rights reserved.
 //
 
 #import "EmitterLayerTestVC.h"
 
 @interface EmitterLayerTestVC ()
+
+@property(nonatomic,strong) CAEmitterLayer  *testLayer;
 
 @end
 
@@ -16,22 +18,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.view setBackgroundColor:[UIColor blackColor]];
+    
+    [self initEmitter];
+    
+    [self makeSnow];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)makeSnow
+{
+    CAEmitterCell *snowCell = [CAEmitterCell emitterCell];
+    snowCell.contents = (__bridge id _Nullable)([UIImage imageNamed:@"snow.png"].CGImage);
+    snowCell.birthRate = 5;
+    snowCell.lifetime = 20;
+    snowCell.velocity = 100;
+    snowCell.velocityRange = 50;
+    snowCell.emissionLongitude = M_PI_2;
+    snowCell.emissionRange = M_PI_2;
+    snowCell.scaleRange = 0.5;
+    
+    _testLayer.emitterCells = @[snowCell];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)initEmitter
+{
+    _testLayer = [CAEmitterLayer layer];
+    _testLayer.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+    _testLayer.renderMode = kCAEmitterLayerAdditive;
+    _testLayer.emitterPosition = CGPointMake(self.view.frame.size.width/2, -35);
+    _testLayer.emitterSize = CGSizeMake(self.view.frame.size.width, 20);
+    [self.view.layer addSublayer:_testLayer];
 }
-*/
 
 @end
