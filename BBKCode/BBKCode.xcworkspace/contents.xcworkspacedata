@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:&#x6838;&#x5fc3;&#x52a8;&#x753b;CoreAnimation&#x4e4b;CALayer/&#x6838;&#x5fc3;&#x52a8;&#x753b;CoreAnimation&#x4e4b;CALayer.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:QRDemo/QRDemo.xcodeproj">
    </FileRef>
    <FileRef

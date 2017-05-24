@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290722CF1ED57C2400C13E69 /* MyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722CE1ED57C2400C13E69 /* MyTestView.m */; };
 		294C22A11EBF06C400DADA84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 294C22A01EBF06C400DADA84 /* main.m */; };
 		294C22A41EBF06C400DADA84 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 294C22A31EBF06C400DADA84 /* AppDelegate.m */; };
 		294C22A71EBF06C400DADA84 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 294C22A61EBF06C400DADA84 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290722CD1ED57C2400C13E69 /* MyTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTestView.h; sourceTree = "<group>"; };
+		290722CE1ED57C2400C13E69 /* MyTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTestView.m; sourceTree = "<group>"; };
 		294C229C1EBF06C400DADA84 /* 导航控制器动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "导航控制器动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		294C22A01EBF06C400DADA84 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		294C22A21EBF06C400DADA84 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 				294C22A61EBF06C400DADA84 /* ViewController.m */,
 				294C22B61EBF070100DADA84 /* VCFirst.h */,
 				294C22B71EBF070100DADA84 /* VCFirst.m */,
+				290722CD1ED57C2400C13E69 /* MyTestView.h */,
+				290722CE1ED57C2400C13E69 /* MyTestView.m */,
 				294C22B91EBF071500DADA84 /* VCSecond.h */,
 				294C22BA1EBF071500DADA84 /* VCSecond.m */,
 				294C22A81EBF06C400DADA84 /* Main.storyboard */,
@@ -163,6 +168,7 @@
 			files = (
 				294C22BB1EBF071500DADA84 /* VCSecond.m in Sources */,
 				294C22A71EBF06C400DADA84 /* ViewController.m in Sources */,
+				290722CF1ED57C2400C13E69 /* MyTestView.m in Sources */,
 				294C22B81EBF070100DADA84 /* VCFirst.m in Sources */,
 				294C22A41EBF06C400DADA84 /* AppDelegate.m in Sources */,
 				294C22A11EBF06C400DADA84 /* main.m in Sources */,
@@ -324,6 +330,7 @@
 				294C22B51EBF06C400DADA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
