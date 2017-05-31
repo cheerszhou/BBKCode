@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E217441EDEC1EC00F40DC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 29E217431EDEC1EC00F40DC4 /* README.md */; };
 		29F2F7751EDEA32E00849EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2F7741EDEA32E00849EAE /* main.m */; };
 		29F2F7781EDEA32E00849EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2F7771EDEA32E00849EAE /* AppDelegate.m */; };
 		29F2F77B1EDEA32E00849EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2F77A1EDEA32E00849EAE /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29E217431EDEC1EC00F40DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		29F2F7701EDEA32E00849EAE /* 核心动画CoreAnimation和图层CALayer的使用举例Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "核心动画CoreAnimation和图层CALayer的使用举例Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2F7741EDEA32E00849EAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29F2F7761EDEA32E00849EAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +44,7 @@
 		29F2F7671EDEA32E00849EAE = {
 			isa = PBXGroup;
 			children = (
+				29E217431EDEC1EC00F40DC4 /* README.md */,
 				29F2F7721EDEA32E00849EAE /* 核心动画CoreAnimation和图层CALayer的使用举例Demo */,
 				29F2F7711EDEA32E00849EAE /* Products */,
 			);
@@ -153,6 +156,7 @@
 			files = (
 				29F2F77B1EDEA32E00849EAE /* ViewController.m in Sources */,
 				29F2F7781EDEA32E00849EAE /* AppDelegate.m in Sources */,
+				29E217441EDEC1EC00F40DC4 /* README.md in Sources */,
 				29F2F7751EDEA32E00849EAE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +316,7 @@
 				29F2F7891EDEA32E00849EAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
