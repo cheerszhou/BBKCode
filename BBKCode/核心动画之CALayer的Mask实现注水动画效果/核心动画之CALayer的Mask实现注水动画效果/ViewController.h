@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  核心动画CoreAnimation之CALayer应用
+//  核心动画之CALayer的Mask实现注水动画效果
 //
-//  Created by zxx_mbp on 2017/5/24.
+//  Created by zxx_mbp on 2017/5/27.
 //  Copyright © 2017年 zxx_mbp. All rights reserved.
 //
 

@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		290722E41ED5B88E00C13E69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722E31ED5B88E00C13E69 /* main.m */; };
 		290722E71ED5B88E00C13E69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722E61ED5B88E00C13E69 /* AppDelegate.m */; };
-		290722EA1ED5B88E00C13E69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722E91ED5B88E00C13E69 /* ViewController.m */; };
+		290722EA1ED5B88E00C13E69 /* ProgressLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722E91ED5B88E00C13E69 /* ProgressLayerViewController.m */; };
 		290722ED1ED5B88E00C13E69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290722EB1ED5B88E00C13E69 /* Main.storyboard */; };
 		290722EF1ED5B88E00C13E69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 290722EE1ED5B88E00C13E69 /* Assets.xcassets */; };
 		290722F21ED5B88E00C13E69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 290722F01ED5B88E00C13E69 /* LaunchScreen.storyboard */; };
 		290722FC1ED5B8F100C13E69 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 290722FB1ED5B8F100C13E69 /* README */; };
+		290E872B1ED6F8A40042C8F5 /* ZXProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E872A1ED6F8A40042C8F5 /* ZXProgressView.m */; };
+		290E872E1ED6F8DB0042C8F5 /* ZXProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 290E872D1ED6F8DB0042C8F5 /* ZXProgressLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +23,17 @@
 		290722E31ED5B88E00C13E69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		290722E51ED5B88E00C13E69 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		290722E61ED5B88E00C13E69 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		290722E81ED5B88E00C13E69 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		290722E91ED5B88E00C13E69 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		290722E81ED5B88E00C13E69 /* ProgressLayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressLayerViewController.h; sourceTree = "<group>"; };
+		290722E91ED5B88E00C13E69 /* ProgressLayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressLayerViewController.m; sourceTree = "<group>"; };
 		290722EC1ED5B88E00C13E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		290722EE1ED5B88E00C13E69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		290722F11ED5B88E00C13E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		290722F31ED5B88E00C13E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		290722FB1ED5B8F100C13E69 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		290E87291ED6F8A40042C8F5 /* ZXProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXProgressView.h; sourceTree = "<group>"; };
+		290E872A1ED6F8A40042C8F5 /* ZXProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXProgressView.m; sourceTree = "<group>"; };
+		290E872C1ED6F8DB0042C8F5 /* ZXProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXProgressLayer.h; sourceTree = "<group>"; };
+		290E872D1ED6F8DB0042C8F5 /* ZXProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXProgressLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +69,12 @@
 			children = (
 				290722E51ED5B88E00C13E69 /* AppDelegate.h */,
 				290722E61ED5B88E00C13E69 /* AppDelegate.m */,
-				290722E81ED5B88E00C13E69 /* ViewController.h */,
-				290722E91ED5B88E00C13E69 /* ViewController.m */,
+				290722E81ED5B88E00C13E69 /* ProgressLayerViewController.h */,
+				290722E91ED5B88E00C13E69 /* ProgressLayerViewController.m */,
+				290E87291ED6F8A40042C8F5 /* ZXProgressView.h */,
+				290E872A1ED6F8A40042C8F5 /* ZXProgressView.m */,
+				290E872C1ED6F8DB0042C8F5 /* ZXProgressLayer.h */,
+				290E872D1ED6F8DB0042C8F5 /* ZXProgressLayer.m */,
 				290722EB1ED5B88E00C13E69 /* Main.storyboard */,
 				290722EE1ED5B88E00C13E69 /* Assets.xcassets */,
 				290722F01ED5B88E00C13E69 /* LaunchScreen.storyboard */,
@@ -155,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290722EA1ED5B88E00C13E69 /* ViewController.m in Sources */,
+				290E872E1ED6F8DB0042C8F5 /* ZXProgressLayer.m in Sources */,
+				290722EA1ED5B88E00C13E69 /* ProgressLayerViewController.m in Sources */,
+				290E872B1ED6F8A40042C8F5 /* ZXProgressView.m in Sources */,
 				290722E71ED5B88E00C13E69 /* AppDelegate.m in Sources */,
 				290722E41ED5B88E00C13E69 /* main.m in Sources */,
 			);
@@ -316,6 +328,7 @@
 				290722F81ED5B88E00C13E69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
