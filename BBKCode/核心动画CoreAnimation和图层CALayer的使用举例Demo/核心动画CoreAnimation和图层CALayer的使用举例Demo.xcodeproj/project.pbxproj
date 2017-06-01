@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		29E217441EDEC1EC00F40DC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 29E217431EDEC1EC00F40DC4 /* README.md */; };
+		29E217471EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E217461EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m */; };
+		29E2174A1EDEE88700F40DC4 /* CALayerDrawInRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E217491EDEE88700F40DC4 /* CALayerDrawInRect.m */; };
+		29E2174C1EDEEBDF00F40DC4 /* girls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 29E2174B1EDEEBDF00F40DC4 /* girls.jpg */; };
 		29F2F7751EDEA32E00849EAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2F7741EDEA32E00849EAE /* main.m */; };
 		29F2F7781EDEA32E00849EAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2F7771EDEA32E00849EAE /* AppDelegate.m */; };
 		29F2F77B1EDEA32E00849EAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F2F77A1EDEA32E00849EAE /* ViewController.m */; };
@@ -18,6 +21,11 @@
 
 /* Begin PBXFileReference section */
 		29E217431EDEC1EC00F40DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		29E217451EDECB2800F40DC4 /* CALayerDefaultAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerDefaultAnimationVC.h; sourceTree = "<group>"; };
+		29E217461EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerDefaultAnimationVC.m; sourceTree = "<group>"; };
+		29E217481EDEE88700F40DC4 /* CALayerDrawInRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerDrawInRect.h; sourceTree = "<group>"; };
+		29E217491EDEE88700F40DC4 /* CALayerDrawInRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerDrawInRect.m; sourceTree = "<group>"; };
+		29E2174B1EDEEBDF00F40DC4 /* girls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = girls.jpg; sourceTree = "<group>"; };
 		29F2F7701EDEA32E00849EAE /* 核心动画CoreAnimation和图层CALayer的使用举例Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "核心动画CoreAnimation和图层CALayer的使用举例Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F2F7741EDEA32E00849EAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29F2F7761EDEA32E00849EAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,10 +69,15 @@
 		29F2F7721EDEA32E00849EAE /* 核心动画CoreAnimation和图层CALayer的使用举例Demo */ = {
 			isa = PBXGroup;
 			children = (
+				29E2174B1EDEEBDF00F40DC4 /* girls.jpg */,
 				29F2F7761EDEA32E00849EAE /* AppDelegate.h */,
 				29F2F7771EDEA32E00849EAE /* AppDelegate.m */,
 				29F2F7791EDEA32E00849EAE /* ViewController.h */,
 				29F2F77A1EDEA32E00849EAE /* ViewController.m */,
+				29E217451EDECB2800F40DC4 /* CALayerDefaultAnimationVC.h */,
+				29E217461EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m */,
+				29E217481EDEE88700F40DC4 /* CALayerDrawInRect.h */,
+				29E217491EDEE88700F40DC4 /* CALayerDrawInRect.m */,
 				29F2F77C1EDEA32E00849EAE /* Main.storyboard */,
 				29F2F77F1EDEA32E00849EAE /* Assets.xcassets */,
 				29F2F7811EDEA32E00849EAE /* LaunchScreen.storyboard */,
@@ -144,6 +157,7 @@
 				29F2F7831EDEA32E00849EAE /* LaunchScreen.storyboard in Resources */,
 				29F2F7801EDEA32E00849EAE /* Assets.xcassets in Resources */,
 				29F2F77E1EDEA32E00849EAE /* Main.storyboard in Resources */,
+				29E2174C1EDEEBDF00F40DC4 /* girls.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +170,8 @@
 			files = (
 				29F2F77B1EDEA32E00849EAE /* ViewController.m in Sources */,
 				29F2F7781EDEA32E00849EAE /* AppDelegate.m in Sources */,
+				29E2174A1EDEE88700F40DC4 /* CALayerDrawInRect.m in Sources */,
+				29E217471EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m in Sources */,
 				29E217441EDEC1EC00F40DC4 /* README.md in Sources */,
 				29F2F7751EDEA32E00849EAE /* main.m in Sources */,
 			);
