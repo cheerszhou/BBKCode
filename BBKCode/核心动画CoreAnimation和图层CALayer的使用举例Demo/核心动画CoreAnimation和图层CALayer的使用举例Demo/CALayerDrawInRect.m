@@ -20,10 +20,46 @@
     [super viewDidLoad];
     self.title = @"CALayer绘图";
     
-    [self extension_1];
+    [self extension_2];
 }
 
-
+- (void)extension_2 {
+    
+    CGPoint position = CGPointMake(160, 200);
+    CGRect bounds = CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT);
+    CGFloat cornerRadius = PHOTO_HEIGHT/2;
+    CGFloat borderWidth = 2;
+    
+    //阴影图层
+    CALayer* layerShadow = [[CALayer alloc]init];
+    layerShadow.bounds = bounds;
+    layerShadow.position = position;
+    layerShadow.cornerRadius = cornerRadius;
+    layerShadow.shadowColor = [UIColor grayColor].CGColor;
+    layerShadow.shadowOffset = CGSizeMake(2, 1);
+    layerShadow.borderColor = [UIColor grayColor].CGColor;
+    layerShadow.shadowOpacity = 1;
+    layerShadow.backgroundColor = [UIColor cyanColor].CGColor;
+    layerShadow.borderWidth = borderWidth;
+    [self.view.layer addSublayer:layerShadow];
+    
+    //容器图层
+    CALayer *layer = [[CALayer alloc]    init];
+    layer.bounds = bounds;
+    layer.position = position;
+    layer.backgroundColor = [UIColor redColor].CGColor;
+    layer.cornerRadius = cornerRadius;
+    layer.masksToBounds = YES;
+    layer.borderColor = [UIColor whiteColor].CGColor;
+    //设置内容(注意转换成CGImage）
+    UIImage* iamge = [UIImage imageNamed:@"girls.jpg"];
+    [layer setContents:(id)iamge.CGImage];
+    
+    //使用变换CATransform3D
+    [layer setValue:@(M_PI) forKey:@"transform.rotation.x"];
+    [self.view.layer addSublayer:layer];
+    
+}
 - (void)extension_1 {
     CGPoint position = CGPointMake(160, 200);
     CGRect bounds = CGRectMake(0, 0, PHOTO_HEIGHT, PHOTO_HEIGHT);
