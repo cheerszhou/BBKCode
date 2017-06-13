@@ -16,6 +16,10 @@
 		291200A81EE1895D00ACE234 /* timg_0005.png in Resources */ = {isa = PBXBuildFile; fileRef = 291200A01EE1895D00ACE234 /* timg_0005.png */; };
 		291200A91EE1895D00ACE234 /* timg_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = 291200A11EE1895D00ACE234 /* timg_0006.png */; };
 		291200AA1EE1895D00ACE234 /* timg_0007.png in Resources */ = {isa = PBXBuildFile; fileRef = 291200A21EE1895D00ACE234 /* timg_0007.png */; };
+		291200B11EE18EB100ACE234 /* AnimationFromUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291200B01EE18EB100ACE234 /* AnimationFromUIView.m */; };
+		291200B31EE1931F00ACE234 /* blackBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 291200B21EE1931F00ACE234 /* blackBall.png */; };
+		291200B61EE1985900ACE234 /* KeyFrameAnimationFromUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291200B51EE1985900ACE234 /* KeyFrameAnimationFromUIView.m */; };
+		291200B91EE19C3000ACE234 /* TransitionAnimationFromView.m in Sources */ = {isa = PBXBuildFile; fileRef = 291200B81EE19C3000ACE234 /* TransitionAnimationFromView.m */; };
 		29E217441EDEC1EC00F40DC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 29E217431EDEC1EC00F40DC4 /* README.md */; };
 		29E217471EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E217461EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m */; };
 		29E2174A1EDEE88700F40DC4 /* CALayerDrawInRect.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E217491EDEE88700F40DC4 /* CALayerDrawInRect.m */; };
@@ -55,8 +59,13 @@
 		291200A01EE1895D00ACE234 /* timg_0005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg_0005.png; sourceTree = "<group>"; };
 		291200A11EE1895D00ACE234 /* timg_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg_0006.png; sourceTree = "<group>"; };
 		291200A21EE1895D00ACE234 /* timg_0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timg_0007.png; sourceTree = "<group>"; };
-		291200AC1EE18D6000ACE234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/AnimationFromUIView.h; sourceTree = "<group>"; };
-		291200AE1EE18D6000ACE234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/AnimationFromUIView.m; sourceTree = "<group>"; };
+		291200AF1EE18EB100ACE234 /* AnimationFromUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationFromUIView.h; sourceTree = "<group>"; };
+		291200B01EE18EB100ACE234 /* AnimationFromUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationFromUIView.m; sourceTree = "<group>"; };
+		291200B21EE1931F00ACE234 /* blackBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackBall.png; sourceTree = "<group>"; };
+		291200B41EE1985900ACE234 /* KeyFrameAnimationFromUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyFrameAnimationFromUIView.h; sourceTree = "<group>"; };
+		291200B51EE1985900ACE234 /* KeyFrameAnimationFromUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyFrameAnimationFromUIView.m; sourceTree = "<group>"; };
+		291200B71EE19C3000ACE234 /* TransitionAnimationFromView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimationFromView.h; sourceTree = "<group>"; };
+		291200B81EE19C3000ACE234 /* TransitionAnimationFromView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimationFromView.m; sourceTree = "<group>"; };
 		29E217431EDEC1EC00F40DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		29E217451EDECB2800F40DC4 /* CALayerDefaultAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALayerDefaultAnimationVC.h; sourceTree = "<group>"; };
 		29E217461EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALayerDefaultAnimationVC.m; sourceTree = "<group>"; };
@@ -137,6 +146,7 @@
 				291200A01EE1895D00ACE234 /* timg_0005.png */,
 				291200A11EE1895D00ACE234 /* timg_0006.png */,
 				291200A21EE1895D00ACE234 /* timg_0007.png */,
+				291200B21EE1931F00ACE234 /* blackBall.png */,
 				29E217561EDFC13400F40DC4 /* bg.jpg */,
 				29E2174B1EDEEBDF00F40DC4 /* girls.jpg */,
 				29E217641EE0360B00F40DC4 /* 01.png */,
@@ -171,8 +181,12 @@
 				29E217621EE032FB00F40DC4 /* TransitionAnimationVC.m */,
 				2904A48D1EE0FAAF00A1AA23 /* CADisplaylinkAnimationVC.h */,
 				2904A48E1EE0FAAF00A1AA23 /* CADisplaylinkAnimationVC.m */,
-				291200AB1EE18D6000ACE234 /* AnimationFromUIView.h */,
-				291200AD1EE18D6000ACE234 /* AnimationFromUIView.m */,
+				291200AF1EE18EB100ACE234 /* AnimationFromUIView.h */,
+				291200B01EE18EB100ACE234 /* AnimationFromUIView.m */,
+				291200B41EE1985900ACE234 /* KeyFrameAnimationFromUIView.h */,
+				291200B51EE1985900ACE234 /* KeyFrameAnimationFromUIView.m */,
+				291200B71EE19C3000ACE234 /* TransitionAnimationFromView.h */,
+				291200B81EE19C3000ACE234 /* TransitionAnimationFromView.m */,
 				29F2F77C1EDEA32E00849EAE /* Main.storyboard */,
 				29F2F77F1EDEA32E00849EAE /* Assets.xcassets */,
 				29F2F7811EDEA32E00849EAE /* LaunchScreen.storyboard */,
@@ -253,6 +267,7 @@
 				29E217721EE0360B00F40DC4 /* 07.png in Resources */,
 				291200AA1EE1895D00ACE234 /* timg_0007.png in Resources */,
 				291200A71EE1895D00ACE234 /* timg_0004.png in Resources */,
+				291200B31EE1931F00ACE234 /* blackBall.png in Resources */,
 				291200A51EE1895D00ACE234 /* timg_0002.png in Resources */,
 				291200A31EE1895D00ACE234 /* timg_0000.png in Resources */,
 				29E217701EE0360B00F40DC4 /* 05.png in Resources */,
@@ -287,35 +302,22 @@
 				29E217631EE032FB00F40DC4 /* TransitionAnimationVC.m in Sources */,
 				29E217601EE017DD00F40DC4 /* AnimationGroupVC.m in Sources */,
 				29E217551EDFB90D00F40DC4 /* ZXView.m in Sources */,
+				291200B91EE19C3000ACE234 /* TransitionAnimationFromView.m in Sources */,
 				29F2F77B1EDEA32E00849EAE /* ViewController.m in Sources */,
 				29F2F7781EDEA32E00849EAE /* AppDelegate.m in Sources */,
+				291200B61EE1985900ACE234 /* KeyFrameAnimationFromUIView.m in Sources */,
 				29E2174A1EDEE88700F40DC4 /* CALayerDrawInRect.m in Sources */,
 				29E217471EDECB2800F40DC4 /* CALayerDefaultAnimationVC.m in Sources */,
 				29E2175D1EE00B3B00F40DC4 /* KeyFrameAnimationVC.m in Sources */,
 				29E217441EDEC1EC00F40DC4 /* README.md in Sources */,
 				29F2F7751EDEA32E00849EAE /* main.m in Sources */,
+				291200B11EE18EB100ACE234 /* AnimationFromUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		291200AB1EE18D6000ACE234 /* AnimationFromUIView.h */ = {
-			isa = PBXVariantGroup;
-			children = (
-				291200AC1EE18D6000ACE234 /* Base */,
-			);
-			name = AnimationFromUIView.h;
-			sourceTree = "<group>";
-		};
-		291200AD1EE18D6000ACE234 /* AnimationFromUIView.m */ = {
-			isa = PBXVariantGroup;
-			children = (
-				291200AE1EE18D6000ACE234 /* Base */,
-			);
-			name = AnimationFromUIView.m;
-			sourceTree = "<group>";
-		};
 		29F2F77C1EDEA32E00849EAE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
