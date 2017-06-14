@@ -15,6 +15,7 @@
 		2947F09C1EC6B5A000BFDADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2947F09A1EC6B5A000BFDADF /* LaunchScreen.storyboard */; };
 		2947F0A51EC6B6B500BFDADF /* ZxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2947F0A41EC6B6B500BFDADF /* ZxTableViewController.m */; };
 		2947F0A71EC6F30900BFDADF /* Light.png in Resources */ = {isa = PBXBuildFile; fileRef = 2947F0A61EC6F30900BFDADF /* Light.png */; };
+		299CBACC1EF000BB000C5104 /* UIButton+EKCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 299CBACB1EF000BB000C5104 /* UIButton+EKCommon.m */; };
 		29FC21C31ECD3DE400568F78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FC21C21ECD3DE400568F78 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		2947F0A31EC6B6B500BFDADF /* ZxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZxTableViewController.h; sourceTree = "<group>"; };
 		2947F0A41EC6B6B500BFDADF /* ZxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZxTableViewController.m; sourceTree = "<group>"; };
 		2947F0A61EC6F30900BFDADF /* Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Light.png; sourceTree = "<group>"; };
+		299CBACA1EF000BB000C5104 /* UIButton+EKCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EKCommon.h"; sourceTree = "<group>"; };
+		299CBACB1EF000BB000C5104 /* UIButton+EKCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EKCommon.m"; sourceTree = "<group>"; };
 		29FC21C21ECD3DE400568F78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +69,8 @@
 		2947F08B1EC6B5A000BFDADF /* iOS小技巧总结 */ = {
 			isa = PBXGroup;
 			children = (
+				299CBACA1EF000BB000C5104 /* UIButton+EKCommon.h */,
+				299CBACB1EF000BB000C5104 /* UIButton+EKCommon.m */,
 				29076E341EC700ED006A4B60 /* UIImage+ColorAtPixel.h */,
 				29076E351EC700ED006A4B60 /* UIImage+ColorAtPixel.m */,
 				2947F0A61EC6F30900BFDADF /* Light.png */,
@@ -165,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299CBACC1EF000BB000C5104 /* UIButton+EKCommon.m in Sources */,
 				29076E361EC700ED006A4B60 /* UIImage+ColorAtPixel.m in Sources */,
 				2947F0941EC6B5A000BFDADF /* ViewController.m in Sources */,
 				2947F0911EC6B5A000BFDADF /* AppDelegate.m in Sources */,

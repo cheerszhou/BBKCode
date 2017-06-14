@@ -6,7 +6,7 @@
 //
 
 #import "ZxTableViewController.h"
-
+#import "UIButton+EKCommon.h"
 
 @interface ZxTableViewController ()
 
@@ -27,6 +27,7 @@
     }
     //self.tableView.tableFooterView = view;
     enumerateFonts();
+    
 }
 
 - (void)didReceiveMemoryWarning {

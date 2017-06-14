@@ -8,12 +8,24 @@
 
 #import "ViewController.h"
 #import "UIImage+ColorAtPixel.h"
+#import "UIButton+EKCommon.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *image;
 @property (weak, nonatomic) IBOutlet UIView *colorView;
 
 @end
+
+#define IOS10 ([[[UIDevice currentDevice]systemVersion] floatValue] >= 10.0)
+
+static inline UIColor * HexRGB(int rgbValue,float alv){
+    
+    if (IOS10) {
+        return [UIColor colorWithDisplayP3Red:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alv/1.0];
+    }else{
+        return [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alv/1.0];
+    }
+}
 
 @implementation ViewController
 
@@ -58,6 +70,15 @@
     }
     
     NSLog(@"Launch ImageName:%@",[self getLaunchImageName]);
+    
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    UIButton* btn = [[UIButton alloc]initWithFrame:CGRectMake(10, screenSize.height - 52 -44 -10, screenSize.width - 20, 44)];
+    UIButton* btn2 = [[UIButton alloc]initWithFrame:CGRectMake(10, screenSize.height - 52, screenSize.width - 20, 44)];
+    [self.view addSubview:btn];
+    [self.view addSubview:btn2];
+    [btn setBackgroundColor:HexRGB(0xff4444, 1.0)];
+    [btn2 setStatusOpened];
+    
     
 }
 
