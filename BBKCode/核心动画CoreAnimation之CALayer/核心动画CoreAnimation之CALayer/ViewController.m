@@ -14,6 +14,7 @@
 #import "TimeFuncTestVC.h"
 #import "MaskLayerTestVC.h"
 #import "EmitterLayerTestVC.h"
+#import "LayerTransformViewController.h"
 
 NSString * cellIdentifier = @"cell_identifier";
 
@@ -28,7 +29,7 @@ NSString * cellIdentifier = @"cell_identifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.sources = @[@"简单动画",@"UIView动画",@"动画的暂停和继续",@"modelLayer与presentationLayer",@"模拟时间函数插值",@"蒙版实现刮刮卡效果",@"粒子效果"];
+    self.sources = @[@"简单动画",@"UIView动画",@"动画的暂停和继续",@"modelLayer与presentationLayer",@"模拟时间函数插值",@"蒙版实现刮刮卡效果",@"粒子效果",@"LayerAndTransform"];
     self.title = @"CoreAnimationDemo";
     
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
@@ -82,6 +83,8 @@ NSString * cellIdentifier = @"cell_identifier";
         vc = [MaskLayerTestVC new];
     }else if(indexPath.row == 6) {
         vc = [EmitterLayerTestVC new];
+    }else if (indexPath.row == 7) {
+        vc = [LayerTransformViewController new];
     }
     
     if (vc) {
