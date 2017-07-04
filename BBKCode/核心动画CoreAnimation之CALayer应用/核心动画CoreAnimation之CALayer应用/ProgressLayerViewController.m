@@ -9,6 +9,7 @@
 #import "ProgressLayerViewController.h"
 #import "ZXProgressView.h"
 @interface ProgressLayerViewController ()
+@property (weak, nonatomic) IBOutlet UIView *TimeOffsetAndSpeedView;
 @property (nonatomic, strong) ZXProgressView *progressView;
 @end
 
@@ -20,6 +21,15 @@
     self.progressView.progress = 0.f;
     self.progressView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:self.progressView];
+    self.TimeOffsetAndSpeedView.backgroundColor = [UIColor redColor];
+    
+    CABasicAnimation* changeColor = [CABasicAnimation animation];
+    changeColor.keyPath = @"backgroundColor";
+    changeColor.toValue = (__bridge id _Nullable)([UIColor orangeColor].CGColor);
+    changeColor.fromValue = (__bridge id _Nullable)([UIColor greenColor].CGColor);
+    changeColor.duration = 1.0;
+    self.TimeOffsetAndSpeedView.layer.speed = 0;
+    [self.TimeOffsetAndSpeedView.layer addAnimation:changeColor forKey:@"changecolor"];
     
 }
 
@@ -32,6 +42,7 @@
 
 - (IBAction)changeProgress:(UISlider*)sender {
     self.progressView.progress = sender.value;
+    self.TimeOffsetAndSpeedView.layer.timeOffset = sender.value;
 }
 
 

@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Progress Layer View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProgressLayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,36 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ddM-71-0UF">
+                                <rect key="frame" x="14" y="601" width="347" height="31"/>
+                                <connections>
+                                    <action selector="changeProgress:" destination="BYZ-38-t0r" eventType="valueChanged" id="zbh-M7-mcC"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-Sr-LG4">
+                                <rect key="frame" x="16" y="473" width="343" height="93"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AuX-Sr-LG4" firstAttribute="trailing" secondItem="ddM-71-0UF" secondAttribute="trailing" id="9VO-0f-9VG"/>
+                            <constraint firstItem="ddM-71-0UF" firstAttribute="top" secondItem="AuX-Sr-LG4" secondAttribute="bottom" constant="35" id="Dd9-iM-0yx"/>
+                            <constraint firstItem="ddM-71-0UF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HJC-YP-Y8R"/>
+                            <constraint firstItem="ddM-71-0UF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="be4-Sa-64l"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ddM-71-0UF" secondAttribute="bottom" constant="36" id="fSB-ug-WGx"/>
+                            <constraint firstItem="AuX-Sr-LG4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="453" id="k5i-iH-LRY"/>
+                            <constraint firstItem="AuX-Sr-LG4" firstAttribute="leading" secondItem="ddM-71-0UF" secondAttribute="leading" id="klL-4G-bAe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="TimeOffsetAndSpeedView" destination="AuX-Sr-LG4" id="cah-MB-aPc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
