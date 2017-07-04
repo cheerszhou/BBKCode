@@ -184,9 +184,10 @@ return [MyTestLayer class];
 ```
 
 当我们给view设置bounds时，getter、setter的调用顺序是这样的：
-<center>![](http://upload-images.jianshu.io/upload_images/3087964-c4f2207f0724e085.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/650)</center>
-<center><font color = cyan>图3-2 getter、setter的调用顺序</font></center>
+![](http://upload-images.jianshu.io/upload_images/3087964-c4f2207f0724e085.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/650)
+<font color = cyan>图3-2 getter、setter的调用顺序</font>
 也就是说，在view的setBounds方法中，会调用layer的setBounds；同样view的getBounds也会调用layer的getBounds。其他属性也会得到相同的结论。那么动画又是怎么产生的呢？当我们layer的属性发生变化时，会调用代理方法actionForLayer: forKey: 来获得这次属性变化的动画方案，而view就是它所持有的layer的代理：
+
 ```
 @interface CALayer : NSObject <NSCoding, CAMediaTiming>
 ...
@@ -207,6 +208,7 @@ return [MyTestLayer class];
 ...
 @end
 ```
+
 注释中说明，该方法返回一个实现了CAAction的对象，通常是一个动画对象；当返回nil时执行默认的隐式动画，返回null时不执行动画。还是上面那个改变bounds的动画，我们在MyTestView中重写actionForLayer:方法
 
 ```
@@ -216,6 +218,7 @@ id<CAAction> action = [super actionForLayer:layer forKey:event];
 return action;
 }
 ```
+
 观察它的返回值：
 <center>![](http://upload-images.jianshu.io/upload_images/3087964-304bc3f988bc0c85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)</center>
 
