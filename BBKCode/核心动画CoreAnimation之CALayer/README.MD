@@ -10,8 +10,8 @@ http://www.jianshu.com/p/c2570dee26eb
 ## 1.关于CoreAnimation
 CoreAnimation是苹果提供的一套基于绘图的动画框架，下图是官方文档中给出的体系结构。
 
-<center>![CoreAnimation所在的位置](http://cc.cocimg.com/api/uploads/20170220/1487569298620491.png)</center>
-<center><font color = cyan>图1-1 CoreAnimation所在的位置</font></center>
+<center> ![CoreAnimation所在的位置](http://cc.cocimg.com/api/uploads/20170220/1487569298620491.png) </center>
+<center> <font color = cyan>图1-1 CoreAnimation所在的位置</font> </center>
 
 从图中可以看出，最底层是图形硬件(GPU)；上层是OpenGL和CoreGraphics，提供一些接口来访问GPU；再上层的CoreAnimation在此基础上封装了一套动画的API。最上面的UIKit属于应用层，处理与用户的交互。所以，学习CoreAnimation也会涉及一些图形学的知识，了解这些有助于我们更顺手的使用以及更高效的解决问题。
 ## 2.初识CALayer
