@@ -1,10 +1,13 @@
+
+
+[toc]
+#iOS CALayer与iOS动画 讲解及使用
+```
 参考文章：
 CoreAnimation初探(一) —— 图形学基础
 http://www.cocoachina.com/ios/20170221/18734.html
 http://www.jianshu.com/p/c2570dee26eb
-
-[toc]
-#iOS CALayer与iOS动画 讲解及使用
+```
 ##1.关于CoreAnimation
 CoreAnimation是苹果提供的一套基于绘图的动画框架，下图是官方文档中给出的体系结构。
 
