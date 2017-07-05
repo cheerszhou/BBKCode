@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		290722D21ED57C5300C13E69 /* MyTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722D11ED57C5300C13E69 /* MyTestView.m */; };
 		290722D51ED57C6E00C13E69 /* MyTestLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 290722D41ED57C6E00C13E69 /* MyTestLayer.m */; };
-		290722FA1ED5B8A900C13E69 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 290722F91ED5B8A900C13E69 /* README */; };
+		295C1CAE1F0D01CB00FCC9A8 /* README.MD in Sources */ = {isa = PBXBuildFile; fileRef = 295C1CAD1F0D01CB00FCC9A8 /* README.MD */; };
 		298E67D31F0782C10058C571 /* LayerTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E67D21F0782C10058C571 /* LayerTransformViewController.m */; };
 		2994C7D11ED45B990052141A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2994C7D01ED45B990052141A /* main.m */; };
 		2994C7D41ED45B990052141A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2994C7D31ED45B990052141A /* AppDelegate.m */; };
@@ -32,7 +32,7 @@
 		290722D11ED57C5300C13E69 /* MyTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTestView.m; sourceTree = "<group>"; };
 		290722D31ED57C6E00C13E69 /* MyTestLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTestLayer.h; sourceTree = "<group>"; };
 		290722D41ED57C6E00C13E69 /* MyTestLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTestLayer.m; sourceTree = "<group>"; };
-		290722F91ED5B8A900C13E69 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		295C1CAD1F0D01CB00FCC9A8 /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		298E67D11F0782C10058C571 /* LayerTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerTransformViewController.h; sourceTree = "<group>"; };
 		298E67D21F0782C10058C571 /* LayerTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerTransformViewController.m; sourceTree = "<group>"; };
 		2994C7CC1ED45B990052141A /* 核心动画CoreAnimation之CALayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "核心动画CoreAnimation之CALayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +77,7 @@
 		2994C7C31ED45B990052141A = {
 			isa = PBXGroup;
 			children = (
-				290722F91ED5B8A900C13E69 /* README */,
+				295C1CAD1F0D01CB00FCC9A8 /* README.MD */,
 				2994C7CE1ED45B990052141A /* 核心动画CoreAnimation之CALayer */,
 				2994C7CD1ED45B990052141A /* Products */,
 			);
@@ -196,7 +196,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				290722FA1ED5B8A900C13E69 /* README in Resources */,
 				2994C7DF1ED45B990052141A /* LaunchScreen.storyboard in Resources */,
 				2994C7DC1ED45B990052141A /* Assets.xcassets in Resources */,
 				2994C7DA1ED45B990052141A /* Main.storyboard in Resources */,
@@ -219,6 +218,7 @@
 				2994C7F71ED5281F0052141A /* MaskLayerTestVC.m in Sources */,
 				2994C7D41ED45B990052141A /* AppDelegate.m in Sources */,
 				2994C7EE1ED5279A0052141A /* CAPauseTestVC.m in Sources */,
+				295C1CAE1F0D01CB00FCC9A8 /* README.MD in Sources */,
 				2994C7D11ED45B990052141A /* main.m in Sources */,
 				290722D21ED57C5300C13E69 /* MyTestView.m in Sources */,
 				2994C7E81ED527660052141A /* SimpleAnimeVC.m in Sources */,
