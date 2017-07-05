@@ -25,6 +25,8 @@
 }
 
 
+- (IBAction)drawLine:(id)sender {
+}
 - (void)btnAction {
     NSString* weahter = self.weathers[arc4random() % self.weathers.count];
     [self setAppIconWithName:weahter];

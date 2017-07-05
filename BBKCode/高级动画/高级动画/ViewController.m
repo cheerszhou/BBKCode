@@ -37,6 +37,8 @@
 
 
 
+- (IBAction)drawCircleAndLine:(id)sender {
+}
 - (UIView *)parentView {
     if (!_parentView) {
         _parentView = [[UIView alloc]initWithFrame:CGRectMake(40, 80, 260, 380)];
