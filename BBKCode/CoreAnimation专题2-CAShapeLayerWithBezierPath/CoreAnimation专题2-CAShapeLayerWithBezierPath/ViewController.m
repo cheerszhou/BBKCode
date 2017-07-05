@@ -38,4 +38,22 @@
     self.layer.path = bezierPath.CGPath;
 }
 
+- (IBAction)drawCircleAndLine:(id)sender {
+    UIBezierPath* circlePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(30, 30, 200, 200)];
+    [circlePath moveToPoint:CGPointMake(30, 130)];
+    [circlePath addLineToPoint:CGPointMake(230, 130)];
+    self.layer.path = [self conjuctionPath].CGPath;
+
+}
+
+- (UIBezierPath*)conjuctionPath {
+    UIBezierPath* circlePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(30, 30, 200, 200)];
+    UIBezierPath* subLinePath = [UIBezierPath bezierPath];
+    [subLinePath moveToPoint:CGPointMake(30, 130)];
+    [subLinePath addLineToPoint:CGPointMake(230, 130)];
+//    [circlePath appendPath:subLinePath];
+    [subLinePath appendPath:circlePath];
+    return subLinePath;
+}
+
 @end

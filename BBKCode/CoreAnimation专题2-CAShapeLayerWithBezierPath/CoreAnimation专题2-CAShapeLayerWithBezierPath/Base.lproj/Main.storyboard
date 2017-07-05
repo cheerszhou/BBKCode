@@ -43,7 +43,6 @@
                                 <state key="normal" title="画圆"/>
                                 <connections>
                                     <action selector="drawCircleAndLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cm2-Pa-ZAu"/>
-                                    <action selector="drawLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w3P-K5-E1d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhG-Zb-IiH">
