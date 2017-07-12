@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29B024041F146322004E9450 /* 平面向量—绘画指挥家.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "平面向量—绘画指挥家.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29B024041F146322004E9450 /* CoreAnimation专题4-平面向量—绘画指挥家.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreAnimation专题4-平面向量—绘画指挥家.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B024081F146322004E9450 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B0240A1F146322004E9450 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29B0240B1F146322004E9450 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		29B024051F146322004E9450 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29B024041F146322004E9450 /* 平面向量—绘画指挥家.app */,
+				29B024041F146322004E9450 /* CoreAnimation专题4-平面向量—绘画指挥家.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		29B024031F146322004E9450 /* 平面向量—绘画指挥家 */ = {
+		29B024031F146322004E9450 /* CoreAnimation专题4-平面向量—绘画指挥家 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29B0241B1F146322004E9450 /* Build configuration list for PBXNativeTarget "平面向量—绘画指挥家" */;
+			buildConfigurationList = 29B0241B1F146322004E9450 /* Build configuration list for PBXNativeTarget "CoreAnimation专题4-平面向量—绘画指挥家" */;
 			buildPhases = (
 				29B024001F146322004E9450 /* Sources */,
 				29B024011F146322004E9450 /* Frameworks */,
@@ -107,9 +107,9 @@
 			);
 			dependencies = (
 			);
-			name = "平面向量—绘画指挥家";
+			name = "CoreAnimation专题4-平面向量—绘画指挥家";
 			productName = "平面向量—绘画指挥家";
-			productReference = 29B024041F146322004E9450 /* 平面向量—绘画指挥家.app */;
+			productReference = 29B024041F146322004E9450 /* CoreAnimation专题4-平面向量—绘画指挥家.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -128,7 +128,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 29B023FF1F146322004E9450 /* Build configuration list for PBXProject "平面向量—绘画指挥家" */;
+			buildConfigurationList = 29B023FF1F146322004E9450 /* Build configuration list for PBXProject "CoreAnimation专题4-平面向量—绘画指挥家" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -141,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29B024031F146322004E9450 /* 平面向量—绘画指挥家 */,
+				29B024031F146322004E9450 /* CoreAnimation专题4-平面向量—绘画指挥家 */,
 			);
 		};
 /* End PBXProject section */
@@ -310,7 +310,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29B023FF1F146322004E9450 /* Build configuration list for PBXProject "平面向量—绘画指挥家" */ = {
+		29B023FF1F146322004E9450 /* Build configuration list for PBXProject "CoreAnimation专题4-平面向量—绘画指挥家" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				29B024191F146322004E9450 /* Debug */,
@@ -319,7 +319,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29B0241B1F146322004E9450 /* Build configuration list for PBXNativeTarget "平面向量—绘画指挥家" */ = {
+		29B0241B1F146322004E9450 /* Build configuration list for PBXNativeTarget "CoreAnimation专题4-平面向量—绘画指挥家" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				29B0241C1F146322004E9450 /* Debug */,
