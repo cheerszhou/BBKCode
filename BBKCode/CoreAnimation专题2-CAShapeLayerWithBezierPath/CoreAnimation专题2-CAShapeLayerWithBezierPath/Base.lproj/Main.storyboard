@@ -46,14 +46,44 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhG-Zb-IiH">
-                                <rect key="frame" x="183" y="540" width="31" height="30"/>
+                                <rect key="frame" x="197" y="540" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="画方"/>
+                                <state key="normal" title="画曲线"/>
+                                <connections>
+                                    <action selector="drawArc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNc-ie-PWz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HU1-hb-vsZ">
-                                <rect key="frame" x="222" y="540" width="31" height="30"/>
+                                <rect key="frame" x="270" y="540" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="画方"/>
+                                <state key="normal" title="画bezier曲线"/>
+                                <connections>
+                                    <action selector="drawBezierArc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ebl-xx-sgM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5H-Re-933">
+                                <rect key="frame" x="16" y="590" width="114" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="画函数sin(x)图像"/>
+                                <connections>
+                                    <action selector="drawSin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCR-cF-zmx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8W8-CY-Tot">
+                                <rect key="frame" x="144" y="590" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="shapeLayer的strokeStart动画"/>
+                                <connections>
+                                    <action selector="strokeStartAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThJ-Oc-pcW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dM8-tw-4Qk">
+                                <rect key="frame" x="59" y="628" width="215" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="shapeLayer的Path属性动画"/>
+                                <connections>
+                                    <action selector="shapeLayerPathAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WWy-es-pF5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -61,6 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="109.59999999999999" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
