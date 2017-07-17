@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock_dial" translatesAutoresizingMaskIntoConstraints="NO" id="i3y-uU-dQY">
+                                <rect key="frame" x="16" y="170" width="343" height="326"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="hour_hand" translatesAutoresizingMaskIntoConstraints="NO" id="yka-3s-aJ2">
+                                <rect key="frame" x="181" y="286" width="13" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="13" id="4zk-Zb-gcP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="minute_hand" translatesAutoresizingMaskIntoConstraints="NO" id="9DV-Eg-w2w">
+                                <rect key="frame" x="181" y="276" width="13" height="104"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="second_hand" translatesAutoresizingMaskIntoConstraints="NO" id="mtw-kq-YVl">
+                                <rect key="frame" x="183" y="268" width="9" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="9" id="kSh-D9-vCp"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RxT-60-AQa">
+                                <rect key="frame" x="30" y="504" width="123" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.52600673129999997" green="1" blue="0.59511610169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fh-aq-omh">
+                                <rect key="frame" x="95" y="514" width="135" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.65323930730000002" blue="0.58383965859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="scc-2v-cJ8">
+                                <rect key="frame" x="16" y="20" width="343" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vSK-JE-NRf">
+                                        <rect key="frame" x="21" y="8" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVn-Kx-ojU">
+                                        <rect key="frame" x="61" y="8" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-JP-XOL">
+                                        <rect key="frame" x="111" y="0.0" width="3" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.52600673129999997" green="1" blue="0.59511610169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YdK-Oa-gUk">
+                                        <rect key="frame" x="137" y="8" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c8a-T8-qff">
+                                        <rect key="frame" x="177" y="8" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u0n-gp-FDT">
+                                        <rect key="frame" x="253" y="8" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kbI-WS-qkJ">
+                                        <rect key="frame" x="290" y="8" width="22" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iWC-Mr-mqD">
+                                        <rect key="frame" x="224" y="0.0" width="3" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.52600673129999997" green="1" blue="0.59511610169999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="i3y-uU-dQY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2EN-pM-P17"/>
+                            <constraint firstItem="yka-3s-aJ2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="266" id="4xK-q8-EJb"/>
+                            <constraint firstItem="mtw-kq-YVl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="248" id="Cx7-Pa-MpI"/>
+                            <constraint firstItem="i3y-uU-dQY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DqX-jC-JFe"/>
+                            <constraint firstItem="i3y-uU-dQY" firstAttribute="centerX" secondItem="yka-3s-aJ2" secondAttribute="centerX" id="Fbf-6P-7aY"/>
+                            <constraint firstItem="i3y-uU-dQY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="J23-vS-Zxd"/>
+                            <constraint firstItem="i3y-uU-dQY" firstAttribute="centerY" secondItem="9DV-Eg-w2w" secondAttribute="centerY" constant="5" id="Mhs-9y-4Lg"/>
+                            <constraint firstItem="yka-3s-aJ2" firstAttribute="centerY" secondItem="9DV-Eg-w2w" secondAttribute="centerY" id="SKe-Yj-WPL"/>
+                            <constraint firstItem="9DV-Eg-w2w" firstAttribute="trailing" secondItem="yka-3s-aJ2" secondAttribute="trailing" id="T2d-h6-fX2"/>
+                            <constraint firstItem="9DV-Eg-w2w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="256" id="W7M-3F-frq"/>
+                            <constraint firstItem="9DV-Eg-w2w" firstAttribute="leading" secondItem="yka-3s-aJ2" secondAttribute="leading" id="XwC-O5-rfI"/>
+                            <constraint firstItem="i3y-uU-dQY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cGJ-xe-gka"/>
+                            <constraint firstItem="mtw-kq-YVl" firstAttribute="centerX" secondItem="9DV-Eg-w2w" secondAttribute="centerX" id="cR5-06-Mxp"/>
+                            <constraint firstItem="yka-3s-aJ2" firstAttribute="centerY" secondItem="mtw-kq-YVl" secondAttribute="centerY" id="s2o-RP-Iq9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="background" destination="8fh-aq-omh" id="uhx-a5-hEk"/>
+                        <outlet property="foreground" destination="RxT-60-AQa" id="VRW-Zo-N6u"/>
+                        <outlet property="hour_hand" destination="yka-3s-aJ2" id="79m-ls-Izk"/>
+                        <outlet property="minute_hand" destination="9DV-Eg-w2w" id="tdW-fq-Ha1"/>
+                        <outlet property="second_hand" destination="mtw-kq-YVl" id="ziN-55-N8r"/>
+                        <outletCollection property="digitalViews" destination="vSK-JE-NRf" id="jZX-CW-Rb8"/>
+                        <outletCollection property="digitalViews" destination="qVn-Kx-ojU" id="let-72-6RB"/>
+                        <outletCollection property="digitalViews" destination="YdK-Oa-gUk" id="bse-NJ-QY7"/>
+                        <outletCollection property="digitalViews" destination="c8a-T8-qff" id="N0c-Xb-pEp"/>
+                        <outletCollection property="digitalViews" destination="u0n-gp-FDT" id="lui-Al-5gP"/>
+                        <outletCollection property="digitalViews" destination="kbI-WS-qkJ" id="8rC-Hy-tI5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426.39999999999998" y="-32.833583208395808"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clock_dial" width="956" height="956"/>
+        <image name="hour_hand" width="64" height="361"/>
+        <image name="minute_hand" width="65" height="462"/>
+        <image name="second_hand" width="39" height="523"/>
+    </resources>
+</document>
