@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CAReplicatorLayer-&#x56fe;&#x5c42;&#x590d;&#x5236;/CAReplicatorLayer-&#x56fe;&#x5c42;&#x590d;&#x5236;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CALayer_anchorPoint-&#x951a;&#x70b9;&#x7684;&#x5999;&#x7528;/CALayer_anchorPoint-&#x951a;&#x70b9;&#x7684;&#x5999;&#x7528;.xcodeproj">
    </FileRef>
    <FileRef
