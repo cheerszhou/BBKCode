@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:Core Animation&#x6838;&#x5fc3;&#x52a8;&#x753b;"
+      name = "Core Animation&#x6838;&#x5fc3;&#x52a8;&#x753b;">
+   </Group>
+   <FileRef
+      location = "group:CoreAnimation-&#x8fc7;&#x6e21;&#x52a8;&#x753b;/CoreAnimation-&#x8fc7;&#x6e21;&#x52a8;&#x753b;.xcodeproj">
+   </FileRef>
    <FileRef
       location = "group:CAReplicatorLayer-&#x56fe;&#x5c42;&#x590d;&#x5236;/CAReplicatorLayer-&#x56fe;&#x5c42;&#x590d;&#x5236;.xcodeproj">
    </FileRef>
@@ -76,4 +83,8 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:iOS&#x5f00;&#x53d1;&#x7cfb;&#x5217;&#x5b66;&#x4e60;"
+      name = "iOS&#x5f00;&#x53d1;&#x7cfb;&#x5217;&#x5b66;&#x4e60;">
+   </Group>
 </Workspace>
