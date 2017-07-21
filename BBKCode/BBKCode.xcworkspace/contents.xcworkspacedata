@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <Group
-      location = "group:Core Animation&#x6838;&#x5fc3;&#x52a8;&#x753b;"
-      name = "Core Animation&#x6838;&#x5fc3;&#x52a8;&#x753b;">
-   </Group>
    <FileRef
       location = "group:CoreAnimation-&#x8fc7;&#x6e21;&#x52a8;&#x753b;/CoreAnimation-&#x8fc7;&#x6e21;&#x52a8;&#x753b;.xcodeproj">
    </FileRef>
@@ -13,9 +9,6 @@
    </FileRef>
    <FileRef
       location = "group:CALayer_anchorPoint-&#x951a;&#x70b9;&#x7684;&#x5999;&#x7528;/CALayer_anchorPoint-&#x951a;&#x70b9;&#x7684;&#x5999;&#x7528;.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/zxx_mbp/Documents/BBKCode/BBKCode/&#x5e73;&#x9762;&#x5411;&#x91cf;&#x2014;&#x7ed8;&#x753b;&#x6307;&#x6325;&#x5bb6;/CoreAnimation&#x4e13;&#x9898;4-&#x5e73;&#x9762;&#x5411;&#x91cf;&#x2014;&#x7ed8;&#x753b;&#x6307;&#x6325;&#x5bb6;.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:CoreAnimation&#x4e13;&#x9898;3-Layer Masking&#x56fe;&#x5c42;&#x8499;&#x7248;/CoreAnimation&#x4e13;&#x9898;3-Layer Masking&#x56fe;&#x5c42;&#x8499;&#x7248;.xcodeproj">
@@ -38,6 +31,13 @@
    <FileRef
       location = "group:&#x6838;&#x5fc3;&#x52a8;&#x753b;CoreAnimation&#x4e4b;CALayer/&#x6838;&#x5fc3;&#x52a8;&#x753b;CoreAnimation&#x4e4b;CALayer.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:Core Animation&#x6838;&#x5fc3;&#x52a8;&#x753b;"
+      name = "Core Animation&#x6838;&#x5fc3;&#x52a8;&#x753b;">
+      <FileRef
+         location = "group:/Users/zxx_mbp/Documents/BBKCode/BBKCode/&#x5e73;&#x9762;&#x5411;&#x91cf;&#x2014;&#x7ed8;&#x753b;&#x6307;&#x6325;&#x5bb6;/CoreAnimation&#x4e13;&#x9898;4-&#x5e73;&#x9762;&#x5411;&#x91cf;&#x2014;&#x7ed8;&#x753b;&#x6307;&#x6325;&#x5bb6;.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:QRDemo/QRDemo.xcodeproj">
    </FileRef>
