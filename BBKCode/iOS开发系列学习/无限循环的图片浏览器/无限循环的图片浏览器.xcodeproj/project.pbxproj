@@ -1,0 +1,329 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29923BF41F288B2F00DB27F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29923BF31F288B2F00DB27F4 /* main.m */; };
+		29923BF71F288B2F00DB27F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29923BF61F288B2F00DB27F4 /* AppDelegate.m */; };
+		29923BFD1F288B2F00DB27F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29923BFB1F288B2F00DB27F4 /* Main.storyboard */; };
+		29923C021F288B2F00DB27F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29923C001F288B2F00DB27F4 /* LaunchScreen.storyboard */; };
+		29923C0B1F288C4500DB27F4 /* ZXMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29923C0A1F288C4500DB27F4 /* ZXMainViewController.m */; };
+		29923C0E1F2890E500DB27F4 /* ZXTransformViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29923C0D1F2890E500DB27F4 /* ZXTransformViewController.m */; };
+		29923C101F2896E700DB27F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29923C0F1F2896E700DB27F4 /* Assets.xcassets */; };
+		29923C121F29829000DB27F4 /* imageInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29923C111F29829000DB27F4 /* imageInfo.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29923BEF1F288B2F00DB27F4 /* 无限循环的图片浏览器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "无限循环的图片浏览器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29923BF31F288B2F00DB27F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29923BF51F288B2F00DB27F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		29923BF61F288B2F00DB27F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		29923BFC1F288B2F00DB27F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		29923C011F288B2F00DB27F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29923C031F288B2F00DB27F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29923C091F288C4500DB27F4 /* ZXMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXMainViewController.h; sourceTree = "<group>"; };
+		29923C0A1F288C4500DB27F4 /* ZXMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXMainViewController.m; sourceTree = "<group>"; };
+		29923C0C1F2890E500DB27F4 /* ZXTransformViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXTransformViewController.h; sourceTree = "<group>"; };
+		29923C0D1F2890E500DB27F4 /* ZXTransformViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXTransformViewController.m; sourceTree = "<group>"; };
+		29923C0F1F2896E700DB27F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29923C111F29829000DB27F4 /* imageInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageInfo.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29923BEC1F288B2F00DB27F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29923BE61F288B2F00DB27F4 = {
+			isa = PBXGroup;
+			children = (
+				29923BF11F288B2F00DB27F4 /* 无限循环的图片浏览器 */,
+				29923BF01F288B2F00DB27F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29923BF01F288B2F00DB27F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29923BEF1F288B2F00DB27F4 /* 无限循环的图片浏览器.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29923BF11F288B2F00DB27F4 /* 无限循环的图片浏览器 */ = {
+			isa = PBXGroup;
+			children = (
+				29923BF51F288B2F00DB27F4 /* AppDelegate.h */,
+				29923BF61F288B2F00DB27F4 /* AppDelegate.m */,
+				29923C091F288C4500DB27F4 /* ZXMainViewController.h */,
+				29923C0A1F288C4500DB27F4 /* ZXMainViewController.m */,
+				29923C0C1F2890E500DB27F4 /* ZXTransformViewController.h */,
+				29923C0D1F2890E500DB27F4 /* ZXTransformViewController.m */,
+				29923C0F1F2896E700DB27F4 /* Assets.xcassets */,
+				29923BFB1F288B2F00DB27F4 /* Main.storyboard */,
+				29923C001F288B2F00DB27F4 /* LaunchScreen.storyboard */,
+				29923C031F288B2F00DB27F4 /* Info.plist */,
+				29923C111F29829000DB27F4 /* imageInfo.plist */,
+				29923BF21F288B2F00DB27F4 /* Supporting Files */,
+			);
+			path = "无限循环的图片浏览器";
+			sourceTree = "<group>";
+		};
+		29923BF21F288B2F00DB27F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29923BF31F288B2F00DB27F4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29923BEE1F288B2F00DB27F4 /* 无限循环的图片浏览器 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29923C061F288B2F00DB27F4 /* Build configuration list for PBXNativeTarget "无限循环的图片浏览器" */;
+			buildPhases = (
+				29923BEB1F288B2F00DB27F4 /* Sources */,
+				29923BEC1F288B2F00DB27F4 /* Frameworks */,
+				29923BED1F288B2F00DB27F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "无限循环的图片浏览器";
+			productName = "无限循环的图片浏览器";
+			productReference = 29923BEF1F288B2F00DB27F4 /* 无限循环的图片浏览器.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29923BE71F288B2F00DB27F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = zxx_mbp;
+				TargetAttributes = {
+					29923BEE1F288B2F00DB27F4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = K8MT65P2FF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 29923BEA1F288B2F00DB27F4 /* Build configuration list for PBXProject "无限循环的图片浏览器" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29923BE61F288B2F00DB27F4;
+			productRefGroup = 29923BF01F288B2F00DB27F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29923BEE1F288B2F00DB27F4 /* 无限循环的图片浏览器 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29923BED1F288B2F00DB27F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29923C121F29829000DB27F4 /* imageInfo.plist in Resources */,
+				29923C021F288B2F00DB27F4 /* LaunchScreen.storyboard in Resources */,
+				29923C101F2896E700DB27F4 /* Assets.xcassets in Resources */,
+				29923BFD1F288B2F00DB27F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29923BEB1F288B2F00DB27F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29923BF71F288B2F00DB27F4 /* AppDelegate.m in Sources */,
+				29923C0B1F288C4500DB27F4 /* ZXMainViewController.m in Sources */,
+				29923BF41F288B2F00DB27F4 /* main.m in Sources */,
+				29923C0E1F2890E500DB27F4 /* ZXTransformViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29923BFB1F288B2F00DB27F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29923BFC1F288B2F00DB27F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		29923C001F288B2F00DB27F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29923C011F288B2F00DB27F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29923C041F288B2F00DB27F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		29923C051F288B2F00DB27F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29923C071F288B2F00DB27F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8MT65P2FF;
+				INFOPLIST_FILE = "无限循环的图片浏览器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xtc.----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		29923C081F288B2F00DB27F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = K8MT65P2FF;
+				INFOPLIST_FILE = "无限循环的图片浏览器/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xtc.----------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29923BEA1F288B2F00DB27F4 /* Build configuration list for PBXProject "无限循环的图片浏览器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29923C041F288B2F00DB27F4 /* Debug */,
+				29923C051F288B2F00DB27F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29923C061F288B2F00DB27F4 /* Build configuration list for PBXNativeTarget "无限循环的图片浏览器" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29923C071F288B2F00DB27F4 /* Debug */,
+				29923C081F288B2F00DB27F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29923BE71F288B2F00DB27F4 /* Project object */;
+}

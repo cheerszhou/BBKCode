@@ -79,7 +79,6 @@ static inline UIColor * HexRGB(int rgbValue,float alv){
     [btn setBackgroundColor:HexRGB(0xff4444, 1.0)];
     [btn2 setStatusOpened];
     
-    
 }
 
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   imageInfo.plist
+   无限循环的图片浏览器
+
+   Created by zxx_mbp on 2017/7/27.
+   Copyright (c) 2017年 zxx_mbp. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>664</key>
+        <string>iphone 5s</string>
+        <key>665</key>
+        <string>iphone 5c</string>
+        <key>666</key>
+        <string>ipad min with retain</string>
+        <key>667</key>
+        <string>ipad air</string>
+        <key>668</key>
+        <string>ipod</string>
+        <key>669</key>
+        <string>ipod touch</string>
+        <key>670</key>
+        <string>mac book pro</string>
+        <key>671</key>
+        <string>mac book air</string>
+        <key>672</key>
+        <string>imac</string>
+    </dict>
+</plist>
+

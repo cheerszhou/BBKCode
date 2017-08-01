@@ -86,5 +86,17 @@
    <Group
       location = "group:iOS&#x5f00;&#x53d1;&#x7cfb;&#x5217;&#x5b66;&#x4e60;"
       name = "iOS&#x5f00;&#x53d1;&#x7cfb;&#x5217;&#x5b66;&#x4e60;">
+      <FileRef
+         location = "group:Foundation&#x57fa;&#x7840;/Foundation&#x57fa;&#x7840;.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:C&#x8bed;&#x8a00;&#x57fa;&#x7840;/C&#x8bed;&#x8a00;&#x57fa;&#x7840;.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:&#x65e0;&#x9650;&#x5faa;&#x73af;&#x7684;&#x56fe;&#x7247;&#x6d4f;&#x89c8;&#x5668;/&#x65e0;&#x9650;&#x5faa;&#x73af;&#x7684;&#x56fe;&#x7247;&#x6d4f;&#x89c8;&#x5668;.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:UITableView&#x5168;&#x9762;&#x89e3;&#x6790;/UITableView&#x5168;&#x9762;&#x89e3;&#x6790;.xcodeproj">
+      </FileRef>
    </Group>
 </Workspace>
